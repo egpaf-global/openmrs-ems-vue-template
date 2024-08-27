@@ -1,0 +1,79 @@
+{
+  "name": "@pedaids/openmrs-esm-vue-template",
+  "version": "0.1.0",
+  "private": true,
+  "source": true,
+  "browser": "dist/openmrs-esm-vue-template.js",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "openmrs develop",
+    "serve": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "lint": "vue-cli-service lint",
+    "serve:standalone": "vue-cli-service serve --mode standalone"
+  },
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-typescript": "^7.24.7",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "single-spa-vue": "^2.1.0",
+    "ts-loader": "^9.5.1",
+    "url-loader": "^4.1.1",
+    "vue": "^3.4.38",
+    "vue-loader": "^17.4.2",
+    "vue-router": "^4.0.3",
+    "vue-template-compiler": "^2.7.16",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@openmrs/esm-framework": "5.x",
+    "single-spa": "6.x"
+  },
+  "devDependencies": {
+    "@openmrs/esm-framework": "next",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "openmrs": "next",
+    "style-loader": "2.x",
+    "typescript": "^5.5.4",
+    "vue-cli-plugin-single-spa": "~3.3.0",
+    "webpack": "^5.94.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
